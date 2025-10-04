@@ -1,0 +1,36 @@
+ j
+- Có 2 yếu tố ảnh hưởng tới prompt:
+	- Content: Chứa đầy đủ thông tin liên quan đến nhiệm vụ mà bạn muốn
+	- Cấu trúc: thứ tự, gắn nhãn
+- Có 2 thành phần quan trọng trong prompt
+	- Objective: muốn model đạt được gi, cần cụ thể
+	- Instructions: hướng dẫn step by step, cách để thực hiện task đó
+- Một số thành phần khác trong prompt khác:
+	- Persona:  model là gì, hành động như nào
+	- Constraints: điều model có thể làm và ko làm
+	- Tone: tông giọng
+	- Context: thông tin mà model có thể tham khảo để thực hiện task
+	- Examples: ví dụ câu trả lời nên như nào
+	- Reasoning steps
+	- Response format
+	- Recap
+	- System instruction
+- Một số tip về thiết kế prompt:
+	- Giữ instruction đơn giản
+	- Đưa ra instruction rõ ràng
+	- Sử dụng Persona
+	- Kiểm tra bộ lọc an toàn
+	- Thử nghiệm tham số temperature
+	- Dùng ít ví dụ nhưng đảm bảo đa dạng
+	- Hạn chế dùng chỉ dẫn mang tính phủ định
+	- Dùng ký hiệu phân cách rõ ràng
+- Prompt template:
+	- Là một mẫi prompt có phần có định và phần biến đổi. Khi chạy ứng dụng, dữ liệu động sẽ được chèn vào đúng vị tri trong template để tạo thành prompt hoàn chỉnh gửi đến LLM.
+	- Với dynamic content dùng {} hoặc XML tags
+- Vertex AI Studio
+	- Dùng design, kiểm tra, điều chỉnh prompt để gửi cho Gemini.
+	- Điều chỉnh các tham số
+		- Max output tokesn: số token tối đa tạo được trong response. Một token xấp xỉ 4 ký tự
+		- Temperature: kiếm soát mức ngẫu nhiên trong lựa chọn token. Càng cao càng sáng tạo
+		- Top-K: chọn số lượng token trong k token có xác suất cao nhất
+		- Top-P: giới hạn việc token trong nhóm token có tổng xác suất >= P
