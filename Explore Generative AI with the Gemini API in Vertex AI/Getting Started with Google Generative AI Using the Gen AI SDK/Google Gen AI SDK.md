@@ -8,3 +8,4 @@
 - Phương thức generate content stream: Thay vì chờ model trả lời xong mới nhận thì stream kết quả dần dần
 - Gửi request bất đồng bộ
 - Quản lý chi phí và hiệu năng khi dùng Gemini API dùng count_token và compute token để tính số token trước khi gửi request và sau khi model sinh phản hồi
+- 

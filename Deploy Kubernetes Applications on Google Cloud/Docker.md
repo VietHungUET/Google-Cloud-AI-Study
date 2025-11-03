@@ -25,7 +25,7 @@ CMD ["node", "app.js"] -> Khi khởi động, chạy lệnh
 
 - Các lệnh docker
 	- docker run tên image:  chạy container từ image đó
-	- docker build -t <tên và tag cho image> : tạo image có tên và tag
+	- docker build -t <tên image:tag cho image> . : tạo image có tên và tag
 	- docker run -p 4000:80 -- name < tên container>: ánh xạ cổng 4000 trên máy host sang cổng 80 trong container
 	- docker ps: xem các container đang chạy
 	- docker stop: dừng

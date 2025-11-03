@@ -12,3 +12,4 @@
 
 ## Vertex AI Workbench instance
 - Là một **môi trường phát triển tích hợp (IDE) chạy trên cloud** do Google Cloud cung cấp, nằm trong hệ sinh thái **Vertex AI**. Nó cho phép bạn tạo và quản lý notebook Jupyter
+- Trong môi trường Vertex AI, Google không buộc phải viết code trực tiếp trong notebook. Thay vào đó, ta có thể đóng gói toàn bộ mã huấn luyện (training code) của mình trong một container image (Docker image), rồi gửi container đó lên Vertex AI để tự động chạy job huấn luyện.
